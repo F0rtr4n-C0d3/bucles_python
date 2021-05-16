@@ -16,11 +16,20 @@
 # Tener en cuenta que "range" no incluye el número de "fin" en su secuencia,
 # sino que va hasta el anterior
 
-inicio = int(input('Ingrese el primero número de la secuencia\n'))
+inicio = int(input('Ingrese el primer número de la secuencia\n'))
+
 # fin....
 
+fin= int(input('Ingrese el último número de la secuencia\n'))
+
 # for ... in range(....)
+for numeros in range(inicio,fin):
+    print('Los números son ',numeros)
 
 # Imprimir el valor de la sumatoria
 
-print("terminamos!")
+for sumatoria in (inicio,fin):
+    suma = numeros + sumatoria
+    print('La sumatoria de {} y {} es {}'.format(numeros,sumatoria,suma))
+
+print('terminamos')
